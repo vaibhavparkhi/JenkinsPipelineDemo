@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+				echo "Current workspace is ${env.WORKSPACE}"
                 echo 'Hello World'
             }
         }
